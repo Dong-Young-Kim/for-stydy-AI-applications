@@ -12,6 +12,7 @@
 ## 2. A Brief Note on Python Versions
 현재 파이썬에는 파이썬2와 파이썬3의 두 가지 버전이 있습니다. 파이썬2의 최종 버전은 파이썬 2.7이며, 파이썬3은 계속 버전이 증가하고 있습니다. 혼란스럽게도, 파이썬3은 기존 파이썬2와 호환되지 않게 변경된 부분이 있습니다. 그러므로 파이썬 2.7로 쓰여진 코드는 파이썬3 환경에서 동작하지 않고 그 반대도 마찬가지입니다.
 
+**version**
 ```bash
 !python --version
 ```
@@ -31,6 +32,8 @@ Python 3.7.12
 #### **3.1.1. Numbers**
 다른 언어와 마찬가지로 파이썬의 정수형(Integers)과 실수형(floats) 데이터 타입 역시 동일한 역할을 합니다:
 
+**type**
+
 ``` python
 x = 3
 print(x, type(x))
@@ -40,6 +43,8 @@ print(x, type(x))
 ```
 
 <br>
+
+**Operator**
 
 ``` python
 print(x + 1)   # Addition
@@ -55,6 +60,8 @@ print(x ** 2)  # Exponentiation
 ```
 
 <br>
+
+**+= *=**
 
 ``` python
 x += 1
@@ -81,14 +88,16 @@ print(y, y + 1, y * 2, y ** 2)
 
 <br>
 
-다른 언어들과는 달리, 파이썬에는 증감 단항연산자(x++, x--)가 없습니다.
+> 다른 언어들과는 달리, 파이썬에는 증감 단항연산자(x++, x--)가 없습니다.
 
-파이썬 역시 long 정수형과 복소수 데이터 타입이 구현되어 있습니다. 자세한 사항은 다음 문서에서 확인할 수 있습니다. [링크](https://docs.python.org/3.7/library/stdtypes.html#numeric-types-int-float-long-complex).
+> 파이썬 역시 long 정수형과 복소수 데이터 타입이 구현되어 있습니다. 자세한 사항은 다음 문서에서 확인할 수 있습니다. [링크](https://docs.python.org/3.7/library/stdtypes.html#numeric-types-int-float-long-complex).
 
 <br>
 
 #### **3.1.2. Boolean**
 파이썬에는 논리 자료형의 모든 연산자가 구현되어 있습니다. 그렇지만 기호 (&&, ||, etc.) 대신 영어 단어로 구현되어 있습니다 :
+
+**True/False**
 
 ``` python
 t, f = True, False
@@ -99,6 +108,8 @@ print(type(t))
 ```
 
 <br>
+
+**Logical Operator**
 
 ``` python
 print(t and f) # Logical AND;
@@ -127,6 +138,8 @@ hello 5
 ```
 
 <br>
+
+**String concatenation**
 
 ``` python
 hw = hello + ' ' + world  # String concatenation
